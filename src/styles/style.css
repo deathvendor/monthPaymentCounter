@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.period {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.period:last-of-type {
+    margin-bottom: 0;
+}
+.dates,.total {
+    width: calc(50% - 5px);
+    color: white;
+}
+.dates {
+    font-size: 32px;
+}
+.total {
+    background-color: #3392ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+}
+.total > p {
+    text-align: center;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.event:last-of-type {
+    margin-bottom: 0;
+}
+.date,.payment {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: calc(50% - 5px);
+    background-color: #3392ff;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+}
